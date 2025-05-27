@@ -65,12 +65,6 @@ label i {
     font-size: 22px;
 }
 
-
-ul a:hover {
-    border-radius: 2px;
-    padding: 6px;
-}
-
 .active {
     border-bottom: 2px solid white;
 }
