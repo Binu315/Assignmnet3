@@ -12,28 +12,32 @@ body {
     max-width: 1152px;
     margin: 0 auto;
     background-color: #fcfcfc;
-    
+
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     font-weight: 500;
-
 }
 
-nav li {
-    margin-top: 27px;
-    margin-right: 10px;
-    gap: 33px;
 
-}
 
-nav a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(0, 0, 0);
+nav ul {
+
+
+    padding-top: 27px;
+    padding-right: 60px;
+    padding-bottom: 20px;
 
 }
 
@@ -45,8 +49,20 @@ nav a {
 
 }
 
-.blog-link{
-    color:#FF6464 ;
+.home {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    padding-left: 60px;
+
+}
+
+.home i {
+    font-size: 30px;
+}
+
+.blog-link {
+    color: #FF6464;
 }
 
 input[type="checkbox"] {
@@ -109,86 +125,80 @@ input[type="checkbox"]:checked~.mobile-nav {
     flex-wrap: wrap;
 }
 
-h1{
-    font-weight: 400;
+.blogs h1 {
+    font-weight: 700;
     font-size: 44px;
-    margin-top: 106px;
     margin-bottom: 55px;
 
 }
 
-.blogs{
+.blogs {
 
-display:flex;
-flex-direction: column;
-padding-left: 235px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 235px;
+    padding-top: 106px;
 
 }
 
 
 
-.blog-content h2{
-margin-top: 32px;
-font-size:30px;
-font-weight:500;
+.blog-content h2 {
+    font-size: 30px;
+    font-weight: 500;
 }
 
 .meta {
     font-size: 20px;
     font-weight: 400;
     color: #000000;
-    padding-top:16px ;
+    padding-top: 16px;
     padding-bottom: 15px;
 
 }
 
-.blog-content p{
+.blog-content p {
 
     font-size: 16px;
     max-width: 682px;
     padding-bottom: 17px;
     border-bottom: 1px solid #e0e0e0;
-    
+    margin-bottom: 32px;
 
-    
+
+
 }
 
 
-.separator{
-    margin-left: 4px;
-     margin-right: 4px;
+.separator {
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 
-.foot{
-height:182px;
+.foot {
+
     text-align: center;
-    margin-top: 58px;
-}
-
-.social-icons{
-    margin-top: 58px;
-    margin-bottom: 26px;
+    padding-top: 58px;
     padding-left: 235px;
     padding-right: 235px;
+    padding-bottom: 54px;
 }
 
-.social-icons a{
-    margin-right:35px;
+.social-icons {
     display: inline-block;
+    padding-bottom: 26px;
 
 }
 
-.social-icons i{
-    font-size:30px;
-
+.social-icons i {
+    font-size: 30px;
+    padding-right: 35px;
 }
 
-.foot p{
-   font-size: 14px;
-   font-weight: 400;
-   margin-bottom: 54px;
-   
+.foot p {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 

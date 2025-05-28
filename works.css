@@ -12,7 +12,7 @@ body {
     max-width: 1152px;
     margin: 0 auto;
     background-color: #fcfcfc;
-    
+
 
 }
 
@@ -20,34 +20,38 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+
+nav ul {
+    padding-top: 27px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     font-weight: 500;
-
 }
 
-nav li {
-    margin-top: 27px;
-    margin-right: 10px;
-    gap: 33px;
-
-}
-
-nav a {
+.home {
+    font-size: 24px;
+    color: #333;
     text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(0, 0, 0);
+    padding-left: 60px;
 
 }
 
-
-nav a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(0, 0, 0);
-
+.home i {
+    font-size: 30px;
 }
 
-.work-link{
-    color:#FF6464 ;
+.work-link {
+    color: #FF6464;
 }
 
 input[type="checkbox"] {
@@ -125,15 +129,15 @@ input[type="checkbox"]:checked~.mobile-nav {
     font-size: 44px;
     font-weight: 900;
     line-height: 60px;
+    padding-bottom: 25px
 }
 
 .work-item {
     display: flex;
     gap: 18px;
-    margin-bottom: 40px;
-    padding-bottom: 30px;
-    margin-top: 22px;
-    width:682px;
+    padding-top: 44px;
+    padding-bottom: 48px;
+    width: 682px;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -181,40 +185,34 @@ input[type="checkbox"]:checked~.mobile-nav {
 
 }
 
-.caption-text p{
-   width: 415px;
-   
+.caption-text p {
+    width: 415px;
 
 }
 
 /* footer */
 
-.foot{
+.foot {
 
     text-align: center;
-    padding: 40px;
+    padding-top: 58px;
+    padding-left: 235px;
+    padding-right: 235px;
+    padding-bottom: 54px;
 }
 
-.social-icons{
-    margin-top: 51px;
-    margin-bottom: 26px;
-}
-
-.social-icons a{
-    margin-right:35px;
+.social-icons {
     display: inline-block;
+    padding-bottom: 26px;
 
 }
 
-.social-icons i{
-    font-size:30px;
-
+.social-icons i {
+    font-size: 30px;
+    padding-right: 35px;
 }
 
-.foot p{
-   font-size: 14px;
-   font-weight: 400;
-   margin-bottom: 54px;
-
+.foot p {
+    font-size: 14px;
+    font-weight: 400;
 }
-

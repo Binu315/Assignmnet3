@@ -18,22 +18,41 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
 }
 
-nav li {
-    margin-top: 27px;
-    margin-right: 10px;
-    gap: 33px;
+nav ul {
+    padding-top: 27px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+
 }
+
 
 nav a {
     text-decoration: none;
     text-transform: capitalize;
     color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
 }
 
 
+.work-details {
+    color: #ff7c7c;
+}
+
+
+.home {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    padding-left: 60px;
+
+}
+
+.home i {
+    font-size: 30px;
+}
 
 input[type='checkbox'] {
     appearance: none;
@@ -91,7 +110,7 @@ label i {
     color: rgb(21, 21, 58);
 }
 
-input[type='checkbox']:checked ~ .mobile-nav {
+input[type='checkbox']:checked~.mobile-nav {
     display: flex;
     flex-wrap: wrap;
 }

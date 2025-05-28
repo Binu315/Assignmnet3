@@ -14,23 +14,39 @@ body {
     background-color: #fcfcfc;
 }
 
+.home {
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    padding-left: 60px;
+
+}
+
+.home i {
+    font-size: 30px;
+}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
+
 }
 
-nav li {
-    margin-top: 27px;
-    margin-right: 10px;
-    gap: 33px;
+nav ul {
+    padding-top: 27px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+
 }
 
 nav a {
     text-decoration: none;
     text-transform: capitalize;
     color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: 500;
+
 }
 
 input[type='checkbox'] {
@@ -59,8 +75,8 @@ label i {
     text-decoration: none;
     list-style: none;
     font-size: 18px;
-    margin: 0 10px;
     gap: 20px;
+
 }
 
 .mobile-nav {
@@ -87,23 +103,17 @@ label i {
     color: rgb(21, 21, 58);
 }
 
-input[type='checkbox']:checked ~ .mobile-nav {
+input[type='checkbox']:checked~.mobile-nav {
     display: flex;
     flex-wrap: wrap;
 }
 
 .hero {
-    position: relative;
     display: flex;
-    top: 210px;
-    margin-left: 148px;
-    margin-right: 149px;
+    padding: 210px 148px 71px 148px;
     gap: 110px;
 }
 
-.hero-text {
-    margin-top: 18px;
-}
 
 .hero-text h1 {
     font-weight: 700px;
@@ -154,7 +164,6 @@ input[type='checkbox']:checked ~ .mobile-nav {
     background-color: #eef8fc;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
-    top: 71px;
 }
 
 .con-header {
@@ -188,9 +197,6 @@ input[type='checkbox']:checked ~ .mobile-nav {
     gap: 20px;
     max-width: 960px;
     margin: 0 auto;
-    /* margin-bottom: 32px;
-    margin-right: 148px;
-    margin-left: 148px; */
 }
 
 .post-card {
@@ -198,6 +204,7 @@ input[type='checkbox']:checked ~ .mobile-nav {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
 }
 
 .post-card h2 {
@@ -228,8 +235,8 @@ input[type='checkbox']:checked ~ .mobile-nav {
 
 .featured-works {
     padding-left: 146px;
-    position: relative;
-    margin-top: 78px;
+    padding-top: 78px;
+
 }
 
 .featured-works h2 {
@@ -292,29 +299,30 @@ input[type='checkbox']:checked ~ .mobile-nav {
 /* footer */
 
 .foot {
+
     text-align: center;
-    padding: 40px;
+    padding-top: 58px;
+    padding-left: 235px;
+    padding-right: 235px;
+    padding-bottom: 54px;
 }
 
 .social-icons {
-    margin-top: 51px;
-    margin-bottom: 26px;
-}
-
-.social-icons a {
-    margin-right: 35px;
     display: inline-block;
+    padding-bottom: 26px;
+
 }
 
 .social-icons i {
     font-size: 30px;
+    padding-right: 35px;
 }
 
 .foot p {
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 54px;
 }
+
 
 @media screen and (max-width: 800px) {
     label {
