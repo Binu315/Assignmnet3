@@ -58,7 +58,7 @@ nav a {
 }
 
 .home i {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .blog-link {
@@ -99,21 +99,23 @@ label i {
 .mobile-nav {
     font-size: 20px;
     position: absolute;
+    z-index: 9999;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     background-color: #1d1f43;
-    gap: 10px;
-    inset: 46px 2px 2px 2px;
-    padding-top: 30px;
     list-style: none;
     gap: 25px;
-    padding: 10px;
+    padding: 50px;
     display: none;
     left: 0;
-    top: 44px;
+    top: 55px;
     right: 0;
     bottom: 0;
+
+
 }
+
 
 .mobile-nav a:hover {
     background-color: bisque;
@@ -124,6 +126,10 @@ input[type="checkbox"]:checked~.mobile-nav {
     display: flex;
     flex-wrap: wrap;
 }
+
+
+
+
 
 .blogs h1 {
     font-weight: 700;
@@ -140,8 +146,6 @@ input[type="checkbox"]:checked~.mobile-nav {
     padding-top: 106px;
 
 }
-
-
 
 .blog-content h2 {
     font-size: 30px;
@@ -164,8 +168,6 @@ input[type="checkbox"]:checked~.mobile-nav {
     padding-bottom: 17px;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 32px;
-
-
 
 }
 
@@ -202,15 +204,15 @@ input[type="checkbox"]:checked~.mobile-nav {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     label {
         display: flex;
 
     }
-
+     
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
     .mobile-nav {
         display: none;
     }
@@ -218,10 +220,11 @@ input[type="checkbox"]:checked~.mobile-nav {
     nav a {
         color: rgb(1, 1, 1);
     }
+
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .desktop-nav {
         display: none;
 
