@@ -14,40 +14,50 @@
             rel="stylesheet"
         />
     </head>
-    <body>
+     <body>
         <div class="container">
-            <header>
-                <nav>
-                    <a href="index.html" class="home"
-                        ><i class="fa-solid fa-house"></i>
-                    </a>
+            <nav class="navbar-wrapper">
+                <a href="index.html" class="home-icon">
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
-                    <input type="checkbox" id="hamburger" />
+                <ul class="desktop-nav">
+                    <li>
+                        <a href="works.html" class="nav-item">Work</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="nav-item">Blog</a>
+                    </li>
+                    <li>
+                        <a href="workDetails.html" class="nav-item"
+                            >Work Details</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="hamburger-wrapper">
+                    <input type="checkbox" id="hamburger" class="menu-toggle" />
                     <label for="hamburger">
                         <i class="fa-solid fa-bars"></i>
                     </label>
 
-                    <ul class="desktop-nav">
-                        <li><a href="works.html" class="work-link">Work</a></li>
-                        <li><a href="blog.html" class="blog-link">Blog</a></li>
-                        <li>
-                            <a href="workDetails.html" class="work-details"
-                                >Work Details</a
-                            >
-                        </li>
-                    </ul>
-
                     <ul class="mobile-nav">
-                        <li><a href="works.html" class="work-link">Work</a></li>
-                        <li><a href="blog.html" class="blog-link">Blog</a></li>
                         <li>
-                            <a href="workDetails.html" class="work-details"
+                            <a href="works.html" class="mobile-nav-item"
+                                >Work</a
+                            >
+                        </li>
+                        <li>
+                            <a href="blog.html" class="mobile-nav-item">Blog</a>
+                        </li>
+                        <li>
+                            <a href="workDetails.html" class="mobile-nav-item"
                                 >Work Details</a
                             >
                         </li>
                     </ul>
-                </nav>
-            </header>
+                </div>
+            </nav>
 
             <div class="blogs">
                 <h1>Blog</h1>

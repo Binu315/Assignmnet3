@@ -14,69 +14,75 @@
             rel="stylesheet"
         />
     </head>
+    
     <body>
         <div class="container">
-            <header>
-                <nav>
-                    <a href="index.html" class="home"
-                        ><i class="fa-solid fa-house"></i>
-                    </a>
+            <nav class="navbar-wrapper">
+                <a href="index.html" class="home-icon">
+                    <i class="fa-solid fa-house"></i>
+                </a>
 
-                    <input type="checkbox" id="hamburger" />
+                <ul class="desktop-nav">
+                    <li>
+                        <a href="works.html" class="nav-item ">work</a>
+                    </li>
+                    <li>
+                        <a href="blog.html" class="nav-item">Blog</a>
+                    </li>
+                    <li>
+                        <a href="workDetails.html" class="nav-item"
+                            >Work Details</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="hamburger-wrapper">
+                    <input type="checkbox" id="hamburger" class="menu-toggle" />
                     <label for="hamburger">
                         <i class="fa-solid fa-bars"></i>
                     </label>
 
-                    <ul class="desktop-nav">
-                        <li>
-                            <a href="works.html" class="work-link">Work</a>
-                        </li>
-                        <li>
-                            <a href="blog.html" class="blog-link">Blog</a>
-                        </li>
-                        <li>
-                            <a href="workDetails.html" class="work-details"
-                                >Work Details</a
-                            >
-                        </li>
-                    </ul>
-
                     <ul class="mobile-nav">
                         <li>
-                            <a href="works.html" class="work-link">Work</a>
+                            <a href="works.html" class="mobile-nav-item"
+                                >Work</a
+                            >
                         </li>
                         <li>
-                            <a href="blog.html" class="blog-link">Blog</a>
+                            <a href="blog.html" class="mobile-nav-item">Blog</a>
                         </li>
                         <li>
-                            <a href="workDetails.html" class="work-details"
+                            <a href="workDetails.html" class="mobile-nav-item"
                                 >Work Details</a
                             >
                         </li>
                     </ul>
-                </nav>
-            </header>
-
-            <div class="hero">
-                <div class="hero-text">
-                    <h1>
-                        Hi, I am John,<br /><span>Creative Technologist</span>
-                    </h1>
-                    <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua
-                        dolor do amet sint. velit officia consequat duis enim
-                        velit mollit.Exercitation veniam consequat sant nostrud
-                        amet.
-                    </p>
-                    <a href="#" class="btn">Download Resume</a>
                 </div>
+            </nav>
 
-                <div class="hero-img">
-                    <img
-                        class="profile-pic"
-                        src="images\profile.png"
-                        alt="John's photo"
-                    />
+            <div class="hero-wrapper">
+                <div class="hero-inner-wrapper">
+                    <div class="hero-texts">
+                        <h1 class="hero-header">
+                            Hi, I am John, Creative Technologist
+                        </h1>
+                        <p class="hero-sub-header">
+                            Amet minim mollit non deserunt ullamco est sit
+                            aliqua dolor do amet sint. Velit officia consequat
+                            duis enim velit mollit. Exercitation veniam
+                            consequat sunt nostrud amet.
+                        </p>
+                        <div>
+                            <button class="hero-button">Download Resume</button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img
+                            class="profile-pic"
+                            src="images\profile.png"
+                            alt="John's photo"
+                        />
+                    </div>
                 </div>
             </div>
 
@@ -160,10 +166,7 @@
                 </div>
 
                 <div class="work-item">
-                    <img
-                        src="images\36 days.png"
-                        alt="36 daysPic"
-                    />
+                    <img src="images\36 days.png" alt="36 daysPic" />
                     <div class="caption-text">
                         <h3>36 Days of Malayalam type</h3>
                         <div class="featured-meta">

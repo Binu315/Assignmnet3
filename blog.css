@@ -12,123 +12,110 @@ body {
     max-width: 1152px;
     margin: 0 auto;
     background-color: #fcfcfc;
-
 }
 
-nav {
+/* Navbar */
+
+.navbar-wrapper {
+    padding: 26px 60px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-
-}
-
-nav a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-weight: 500;
-}
-
-
-
-nav ul {
-
-
-    padding-top: 27px;
-    padding-right: 60px;
-    padding-bottom: 20px;
-
-}
-
-
-nav a {
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(0, 0, 0);
-
-}
-
-.home {
-    font-size: 24px;
-    color: #333;
-    text-decoration: none;
-    padding-left: 60px;
-
-}
-
-.home i {
-    font-size: 28px;
-}
-
-.blog-link {
-    color: #FF6464;
-}
-
-input[type="checkbox"] {
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-label {
-    display: none;
-}
-
-label i {
-    color: rgb(0, 0, 0);
-    margin-right: 8px;
-    font-size: 22px;
-}
-
-
-.active {
-    border-bottom: 2px solid white;
 }
 
 .desktop-nav {
     display: flex;
     text-transform: capitalize;
-    color: white;
+    color: red;
     text-decoration: none;
     list-style: none;
     font-size: 18px;
-    margin: 0 10px;
-    gap: 20px;
+    gap: 36px;
 }
+
+.home-icon {
+    color: black;
+    font-size: 30px;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+}
+
+.hamburger-wrapper {
+    display: none;
+    font-size: 30px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+
 
 .mobile-nav {
-    font-size: 20px;
-    position: absolute;
-    z-index: 9999;
-    height: 100vh;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1d1f43;
-    list-style: none;
-    gap: 25px;
-    padding: 50px;
     display: none;
-    left: 0;
-    top: 55px;
+    background-color: black;
+    flex-direction: column;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+    gap: 18px;
+    width: 40%;
+    padding: 20px;
+    z-index: 20;
+    position: absolute;
+    top: 77px;
     right: 0;
-    bottom: 0;
+}
 
-
+.mobile-nav-item {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    display: none;
 }
 
 
-.mobile-nav a:hover {
-    background-color: bisque;
-    color: rgb(21, 21, 58);
-}
-
-input[type="checkbox"]:checked~.mobile-nav {
+.mobile-nav-item {
     display: flex;
-    flex-wrap: wrap;
+}
+
+#hamburger:checked~.mobile-nav {
+    display: block;
+}
+
+#hamburger:checked.body {
+    overflow: hidden;
 }
 
 
+@media screen and (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+        position: relative;
+    }
 
+    .hamburger-wrapper {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hamburger-wrapper {
+
+        font-size: 25px;
+    }
+
+    .home-icon {
+
+        font-size: 25px;
+    }
+}
 
 
 .blogs h1 {
@@ -168,6 +155,7 @@ input[type="checkbox"]:checked~.mobile-nav {
     padding-bottom: 17px;
     border-bottom: 1px solid #e0e0e0;
     margin-bottom: 32px;
+     text-align: justify;
 
 }
 
@@ -177,6 +165,101 @@ input[type="checkbox"]:checked~.mobile-nav {
     padding-right: 4px;
 }
 
+@media screen and (max-width: 992px) {
+
+    .blogs {
+
+        padding-left: 150px;
+        padding-Right: 120px;
+        padding-top: 90px;
+
+
+    }
+
+    .blogs h1 {
+
+        font-size: 40px;
+    }
+
+    .blog-content h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .blogs {
+
+        padding-left: 130px;
+        padding-Right: 120px;
+        padding-top: 90px;
+
+    }
+
+    .blog-content h2 {
+        font-size: 28px;
+    
+    }
+
+
+    .blogs h1 {
+        font-size: 35px;
+    }
+
+    .meta {
+        font-size: 18px;
+    }
+
+    .blog-content p {
+
+        font-size: 16px;
+       
+
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .blogs {
+
+        padding-left: 100px;
+        padding-Right:80px;
+        padding-top: 70px;
+
+    }
+     .blogs h1 {
+
+        font-size: 30px;
+    }
+
+
+    .blog-content h2 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+
+   
+    .meta {
+        font-size: 16px;
+
+    }
+
+    .blog-content p {
+
+        font-size: 16px;
+
+    }
+
+}
+
+
+/* footer */
 
 .foot {
 
@@ -198,40 +281,41 @@ input[type="checkbox"]:checked~.mobile-nav {
     padding-right: 35px;
 }
 
+
 .foot p {
     font-size: 14px;
     font-weight: 400;
 }
 
 
+
 @media screen and (max-width: 768px) {
-    label {
-        display: flex;
 
-    }
-     
-}
+    .foot {
 
-@media screen and (min-width: 768px) {
-    .mobile-nav {
-        display: none;
-    }
-
-    nav a {
-        color: rgb(1, 1, 1);
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 50px;
     }
 
 }
 
+@media screen and (max-width: 576px) {
 
-@media screen and (max-width: 768px) {
-    .desktop-nav {
-        display: none;
+    .foot {
 
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 50px;
     }
 
-    nav a {
-        color: rgb(255, 255, 255);
+    .social-icons i {
+        font-size: 25px;
+        padding-right: 25px;
     }
 
 }
